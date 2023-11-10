@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.followme.app.SimulationController">
+   <children>
+      <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time interval (must be strictly grater than 0, suggested 1.0) :" wrappingWidth="354.1729736328125">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="timeIntervalField" layoutX="412.0" layoutY="19.0" prefHeight="26.0" prefWidth="60.0" text="1.0" />
+      <Text layoutX="14.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of robots that will be generated (must be strictly greater than 0) :" />
+      <TextField fx:id="numberOfRobotsField" layoutX="412.0" layoutY="61.0" prefHeight="26.0" prefWidth="60.0" text="100" />
+      <Text layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinates range [-x, x] :" wrappingWidth="138.89801025390625" />
+      <TextField layoutX="412.0" layoutY="98.0" prefHeight="26.0" prefWidth="60.0" text="10.0" fx:id="xCoordinateRangeField" />
+      <Text layoutX="15.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinates range [-y, y] :" />
+      <TextField fx:id="yCoordinateRangeField" layoutX="412.0" layoutY="139.0" prefHeight="26.0" prefWidth="60.0" text="10.0" />
+      <Text layoutX="15.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Robots' label :" />
+      <TextField fx:id="label" layoutX="412.0" layoutY="175.0" prefHeight="26.0" prefWidth="60.0" text="test" />
+      <Button fx:id="startButton" layoutX="484.0" layoutY="359.0" mnemonicParsing="false" onAction="#onStartButton" prefHeight="26.0" prefWidth="60.0" text="Start" />
+      <Text layoutX="14.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Speed (between 0.0 and the given value, will use the commands speed) :" wrappingWidth="389.7890625" />
+      <TextField fx:id="speed" layoutX="412.0" layoutY="210.0" prefHeight="17.0" prefWidth="60.0" text="1.0" />
+      <Text layoutX="15.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Environment specs file :" wrappingWidth="176.9339599609375" />
+      <Button fx:id="uploadEnvironmentButton" layoutX="412.0" layoutY="248.0" mnemonicParsing="false" onAction="#onUploadEnvironmentButton" prefHeight="26.0" prefWidth="60.0" text="Upload" />
+      <Button fx:id="uploadCommandsButton" layoutX="412.0" layoutY="287.0" mnemonicParsing="false" onAction="#onUploadCommandsButton" prefHeight="26.0" prefWidth="60.0" text="Upload" />
+      <Text layoutX="15.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload robot commands file :" wrappingWidth="167.97894287109375" />
+      <Button fx:id="saveButton" layoutX="412.0" layoutY="359.0" mnemonicParsing="false" onAction="#onSaveButton" prefHeight="26.0" prefWidth="60.0" text="Save" />
+      <Button fx:id="uploadRobotsButton" layoutX="412.0" layoutY="323.0" mnemonicParsing="false" onAction="#onUploadRobotsButton" prefHeight="26.0" prefWidth="60.0" text="Upload" />
+      <Text layoutX="15.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload robots specs file (will ignore random parameters generation) :" />
+   </children>
+</AnchorPane>
